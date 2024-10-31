@@ -1,4 +1,5 @@
 ### 9.1
+#### We started of by doing it for the main function by mistake so here is that one
 ```
 IL_0000: nop                                                                            // Do nothing
 IL_0001: ldc.i4.s 10                                                                    // Push 10 to stack
@@ -66,8 +67,7 @@ IL_006d: ret                                                                    
 ```
 
 
-
-We did an oopsie and made it for Selsort Main.
+#### (i - C#)
 
 Here is the correct one:
 Local variable 0 = i
@@ -157,4 +157,95 @@ IL_0003: br.s IL_0041                                                           
 // end loop
 
 IL_004d: ret                                                                            // return
+```
+
+#### (ii - Java)
+```
+0: iconst_0             // Push 0 onto the stack
+
+1: istore_1             // Pop the top value off the stack (0) and store it in local variable 1 
+
+2: iload_1              // Load local variable 1 onto the stack
+
+3: aload_0              // Load a reference onto the stack from local variable 0 (the array)
+
+4: arraylength          // Get the length of the array
+
+5: if_icmpge     57     // If the length of the array is greater than or equal to the value in local variable 1, jump to line 57
+
+8: iload_1              // Load local variable 1 onto the stack 
+
+9: istore_2             // Pop the top value off the stack and store it in local variable 2 
+
+10: iload_1             // Load local variable 1 onto the stack 
+
+11: iconst_1            // Push 1 onto the stack
+
+12: iadd                // Pop the top two values off the stack, add them, and push the result onto the stack (1+var1)
+
+13: istore_3            // Pop the top value off the stack and store it in local variable 3 
+
+14: iload_3             // Load local variable 3 onto the stack 
+
+15: aload_0             // Load a reference onto the stack from local variable 0 (the array)
+
+16: arraylength         // Get the length of the array
+
+17: if_icmpge     37    // If the length of the array is greater than or equal to the value in local variable 3, jump to line 37
+
+20: aload_0             // Load the array reference onto the stack (the array)
+
+21: iload_3             // Load local variable 3 onto the stack 
+
+22: iaload              // Load the integer arr[var3] from the array onto the stack  
+
+23: aload_0             // Load the array reference onto the stack 
+
+24: iload_2             // Load local variable 2 onto the stack
+
+25: iaload              // Load an integer from the array onto the stack 
+
+26: if_icmpge     31    // If the value in local variable 3 is greater than or equal to the value in local variable 2, jump to line 31
+
+29: iload_3             // Load local variable 3 onto the stack
+
+30: istore_2            // Pop the top value off the stack and store it in local variable 2
+
+31: iinc          3, 1  // Increment local variable 3 by 1
+
+34: goto          14    // Jump to line 14
+
+37: aload_0             // Load the array reference onto the stack
+
+38: iload_1             // Load local variable 1 onto the stack
+
+39: iaload              // Load the integer arr[var1] from the array onto the stack
+
+40: istore_3            // Pop the top value off the stack and store it in local variable 3
+
+41: aload_0             // Load the array reference onto the stack
+
+42: iload_1             // Load local variable 1 onto the stack
+
+43: aload_0             // Load the array reference onto the stack
+
+44: iload_2             // Load local variable 2 onto the stack
+
+45: iaload              // Load the integer arr[var2] from the array onto the stack
+
+46: iastore             // Pop the top two values off the stack and store the second value in the array at the index specified by the first value
+
+47: aload_0             // Load the array reference onto the stack
+
+48: iload_2             // Load local variable 2 onto the stack
+
+49: iload_3             // Load local variable 3 onto the stack
+
+50: iastore             // Pop the top two values off the stack and store the second value in the array at the index specified by the first value
+
+51: iinc          1, 1  // Increment local variable 1 by 1
+
+54: goto          2     // Jump to line 2
+
+57: return
 ```
