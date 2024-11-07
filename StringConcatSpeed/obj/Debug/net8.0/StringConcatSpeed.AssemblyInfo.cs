@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StringConcatSpeed")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0d39ee56a86819d416994fe72d586c763e6de2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+083278764088a0d081bcf4e4e105be15d1199a53")]
 [assembly: System.Reflection.AssemblyProductAttribute("StringConcatSpeed")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StringConcatSpeed")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

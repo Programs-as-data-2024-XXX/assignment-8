@@ -249,3 +249,12 @@ IL_004d: ret                                                                    
 
 57: return
 ```
+
+### 9.3
+The issue in SentinelLockQueue was that the reference to the first item in the queue was not being removed, which caused the program to run out of memory. This is happens since the item can't be properly garbage collected if it isn't de-referenced. 
+
+We fixed the issue by adding the line:
+```
+    first.next = null;
+```
+Which can be found on line 104 in QueueWithMistake/QueueWithMistake.java

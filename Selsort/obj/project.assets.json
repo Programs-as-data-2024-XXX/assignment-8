@@ -8,24 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/macj/.nuget/packages/": {}
+    "C:\\Users\\maxbk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/assignment-8/Selsort/Selsort.csproj",
+      "projectUniqueName": "c:\\Users\\maxbk\\GitHub\\programs-as-data-2024-XXX\\assignment-8\\Selsort\\Selsort.csproj",
       "projectName": "Selsort",
-      "projectPath": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/assignment-8/Selsort/Selsort.csproj",
-      "packagesPath": "/home/macj/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/mchrn/ITU/5_Semester/Programs_as_data/assignment-8/Selsort/obj/",
+      "projectPath": "c:\\Users\\maxbk\\GitHub\\programs-as-data-2024-XXX\\assignment-8\\Selsort\\Selsort.csproj",
+      "packagesPath": "C:\\Users\\maxbk\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\maxbk\\GitHub\\programs-as-data-2024-XXX\\assignment-8\\Selsort\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/macj/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\maxbk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
